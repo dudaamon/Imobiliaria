@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--default-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-brown);
+}
+
+:root {
+  --default-font: "Quicksand", serif;
+  --white: #ffffff;
+  --light-cream: #fcf0e1;
+  --dark-cream: #d7c4ad;
+  --light-grey: #8a8a8a;
+  --light-brown: #857366;
+  --medium-brown: #6e5442;
+  --dark-brown: #332217;
+}
+
+body {
+  background-color: var(--light-cream);
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--light-cream);
+  background: linear-gradient(to bottom, var(--light-cream), var(--dark-cream));
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5%;
+}
+
+.nav-brand {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  width: 95%;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.header-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
+
+.header-contact span {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.main {
+  padding: 190px 10%;
+}
+
+.main-title {
+  margin-bottom: 100px;
+}
+
+.main-title h1 {
+  line-height: 70px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.card-header {
+  background-image: url('https://projetaronline.com/wp-content/uploads/2022/08/P443-FOTOS_11-Foto-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.card-body {
+  padding: 25px 1.2%;
+  line-height: 36px;
+}
+
+.card-icons {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 1.2%;
+}
+
+.card-footer > button {
+  background-color: var(--medium-brown);
+  height: 40px;
+  width: 12%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.card-footer > button:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  transition: box-shadow 0.2s ease, transform 0.6s ease;
+}
